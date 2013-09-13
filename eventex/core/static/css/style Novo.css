@@ -1,0 +1,64 @@
+/*CSS Reset Básico*/
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+table{
+	width: 100%;
+}
+body{
+    letter-spacing: 1px;
+    line-height: 170%;
+    font-family: Verdana, sans-serif;
+}
+.container{
+    width:100%;
+    margin:0;
+    height:auto;
+    position: relative;
+    float: left;
+}
+.content{
+    width:960px;
+    margin:0 auto;
+    padding: 50px 15px;
+    overflow: hidden;
+    height:auto;
+    position: relative;
+    clear: both;
+    background-color: #A2CD5A;
+}
+#header{
+    z-index:10;
+    position:relative;
+    background: #2F3A2F;
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding:0;
+}
+#logo{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#divisoria{
+	border-top: 1px solid;
+}
+#footer .content{
+	padding-top: 0px;
+	padding-bottom: 30px;
+	border-top: 1px #2F3A2F solid;
+	height: 40px;
+	border-radius: 0 0 z0px 40px;
+	background: #6E8B3D;
+}
+#footer .content img{
+	float: right;
+	padding: 5px;
+}
+#imgPy, #imgDj{
+	width: 60px;
+}
