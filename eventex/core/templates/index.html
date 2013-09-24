@@ -1,35 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="utf-8">
-	<link href="{{ STATIC_URL }}/css/style.css" rel="stylesheet" type="text/css"> 
-	<title>Bem vindo ao Eventex</title>
-</head>
-<body>
-	<div class="content">
-		<div id="superBorda"></div>
+{% extends 'base.html' %}
+{% block destaque %}
+	<h1>Bem-vindo ao EventeX!</h1>
+	<p>O evento mais sensacional do ano depois do DevES!<br>
+		Você não pode perder esta oportunidade!<br></p>
+	<br>
+	<p><strong><a href="/inscricao/"> Inscreva-se já!</a></strong></p>
 
-		<div id="destaque">
-			<h1>Bem-vindo ao EventeX!</h1>
-			<p>O evento mais sensacional do ano depois do DevES!<br>
-				Você não pode perder esta oportunidade!<br></p>
-			<br>
-			<p><strong>Abertura das inscrições em 30/09/2012.</strong></p>
-
-			<p>Para dúvidas e mais informações entre em contato com 
-				<a href="mailto:eventex@eventex.com.br">eventex@eventex.com.br</a></p>
-		</div>
-
-		<div id="footer">
-			<table>
-				<tr>
-					<td>©2013 - EventeX, todos os direitos reservados.</td>
-					<td id="imgDj">
-						<a href="https://www.djangoproject.com/"><img src="{{ STATIC_URL }}/img/django-powered.png" title="Django Powered" id="DjPower"></a>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-</body>
-</html>
+	<p>Para dúvidas e mais informações entre em contato com 
+		<a href="mailto:eventex@eventex.com.br">eventex@eventex.com.br</a></p>
+{% endblock destaque %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link href="{{ STATIC_URL }}/css/style.css" rel="stylesheet" type="text/css"> 
+	<title>Bem vindo ao Eventex</title>
+</head>
+<body>
+	<div class="content">
+		<div id="superBorda"></div>
+
+		<div id="destaque">
+			{% block destaque %}
+			{% endblock destaque %}
+		</div>
+
+		<div id="footer">
+			<table>
+				<tr>
+					<td>©2013 - EventeX, todos os direitos reservados.</td>
+					<td id="imgDj">
+						<a href="https://www.djangoproject.com/"><img src="{{ STATIC_URL }}/img/django-powered.png" title="Django Powered" id="DjPower"></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+	</div>
+</body>
+</html>

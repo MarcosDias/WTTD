@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block destaque %}
+	<h1>Formulário de Inscrição</h1>
+	<form action="." method="POST">
+		{% csrf_token %}
+		<table>
+			<tr>
+				<td width="100px">
+					<label for="{{ form.name.id_for_label }}">{{ form.name.label }}:</label>
+				</td>
+				<td>
+					{{ form.name }}
+					{{ form.name.errors }}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="{{ form.cpf.id_for_label }}">{{ form.cpf.label }}:</label>
+				</td>
+				<td>
+					{{ form.cpf }}
+					{{ form.cpf.errors }}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="{{ form.email.id_for_label }}">{{ form.email.label }}:</label>
+				</td>
+				<td>
+					{{ form.email }}
+					{{ form.email.errors }}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}:</label>
+				</td>
+				<td>
+					{{ form.phone }}
+					{{ form.phone.errors }}
+				</td>
+			</tr>
+		</table>
+		<input type="submit" value="Enviar" class="btn">
+	</form>
+{% endblock destaque %}
