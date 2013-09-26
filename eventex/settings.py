@@ -1,4 +1,5 @@
 # Django settings for eventex project.
+# coding: utf-8
 import os
 from unipath import Path
 import dj_database_url
@@ -7,6 +8,11 @@ PROJECT_DIR = Path(__file__).parent
 
 DEBUG = os.environ.get('DEBUG') == 'True'
 TEMPLATE_DEBUG = DEBUG
+
+# Usar o South para preparar o banco nos testes?
+# True: Sim. (default)
+# False: Não! Use o Syncdb
+SOUTH_TESTS_MIGRATE = False
 
 ADMINS = (
     ('Marcos Dias', 'marcos.a.melo.dias@gmail.com'),
@@ -127,10 +133,8 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'django.contrib.admin',
+    'south',
     'eventex.core',
     'eventex.subscriptions',
 )
