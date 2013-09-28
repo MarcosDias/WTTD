@@ -67,6 +67,7 @@ form #id_phone_1{
 .btn {
     background: #2F3A2F;
     width: 150px;
+    color: white;
 }
 .errorlist{
     color: red;
