@@ -5,7 +5,12 @@
 		{% csrf_token %}
 		<table>
 			<tr>
-				<td width="100px">
+				<td width="100px" align="left" colspan="2">
+					{{ form.non_field_errors }}
+				</td>
+			</tr>
+			<tr>
+				<td >
 					<label for="{{ form.name.id_for_label }}">{{ form.name.label }}:</label>
 				</td>
 				<td>

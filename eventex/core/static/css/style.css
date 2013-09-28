@@ -56,6 +56,9 @@ form input {
     padding:3px;
     border-radius: 5px 5px 5px 5px;
 }
+#id_phone_0{
+    width: 40px;
+}
 .btn {
     background: #2F3A2F;
     width: 150px;
